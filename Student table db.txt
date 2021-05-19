@@ -1,0 +1,37 @@
+first drop database student then,
+
+
+create database if not exists sms;
+Query OK, 1 row affected (0.03 sec)
+ use sms;
+Database changed
+
+mysql> create table if not exists student(rno int not null primary key auto_increment,name varchar(40),mobile varchar(12), email varchar(40), address varchar(80), gender varchar(10),sgpa1 varchar(10), sgpa2 varchar(10), sgpa3 varchar(10), sgpa4 varchar(10),image varchar(100));
+Query OK, 0 rows affected (0.09 sec)
+
+
+
+mysql> insert into student values(5,'Simran B',9307052141,'simranbhoneja@gmail.com','Abc,unr','Female',7.2,8.5,10,null,null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(21,'Sony',9284554229,'sonyhotchandani@gmail.com','def,unr','Female',7.0,8.4,9.6,null,null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(28,'Ajay',7021748341,'ajay.kachhela27@gmail.com','ghi,unr','male',6.5,7.9,9.91,null,null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into student values(38,'Simran M',9172596900,'simran.makhija@gmail.com','jkl,kalyan','Female',8.56,9.05,9.61,null,null);
+Query OK, 1 row affected (0.01 sec)
+
+desc student;
+
+select * from student;
+
+
+
+
+
+
+
+
+
